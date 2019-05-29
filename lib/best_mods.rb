@@ -1,6 +1,6 @@
-require "best_mods/version"
-
-module BestMods
-  class Error < StandardError; end
-  # Your code goes here...
-end
+require 'open-uri'
+require 'nokogiri'
+require 'pry'
+require_relative "./best_mods/version"
+require_relative './CLI'
+require_relative './mod'
