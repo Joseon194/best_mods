@@ -22,7 +22,7 @@ class BestMods::Mod
     end
     
     def self.scrape_techradar
-      doc = Nokogiri::HTML(open("https://www.techradar.com/news/10-best-free-total-conversion-mods-for-pc"))
+      doc = Nokogiri::HTML(open("https://www.moddb.com/mods/top"))
       
       mod = self.new
       binding.pry
