@@ -11,17 +11,11 @@ class BestMods::Mod
     def self.scrape_mods
       mods = []
       
-      mods << self.scrape_techradar
-      
-      
-      #go to kbb, find the car
-      #extract the properties
-      #instantiate a car 
-      
+      mods << self.scrape_moddb
       mods
     end
     
-    def self.scrape_techradar
+    def self.scrape_moddb
       doc = Nokogiri::HTML(open("https://www.moddb.com/mods/top"))
       
       mod = self.new
