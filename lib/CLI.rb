@@ -10,7 +10,7 @@ class BestMods::CLI
     puts "Top 5 Mods of 2019:"
     @mods = BestMods::Mod.thisyear
     @mods.each.with_index(1) do |mod, i|
-      puts "#{i}. #{mod.name} - #{mod.year} - #{mod.ogame}"
+      puts "#{i}. #{mod.name} - #{mod.year}"
   end 
 end
 
@@ -22,7 +22,7 @@ end
     
     if input.to_i > 0
       the_mod = @mods[input.to_i-1]
-      puts "#{mod.name} - #{mod.year} - #{mod.ogame}"
+      puts "#{mod.name} - #{mod.year}"
     elsif input == "list"
     list_mods
       else
