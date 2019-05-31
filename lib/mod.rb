@@ -4,9 +4,6 @@ class BestMods::Mod
   def self.thisyear
     self.scrape_mods
   end
-  
-  
-    #scape kbb and then return info based on that data
     
     def self.scrape_mods
       mods = []
@@ -19,6 +16,6 @@ class BestMods::Mod
       mod = self.new
       mod.name = mod.css("a").first.attributes["href"].text
       mod.datemade = mod.css("time").text
-      binding.pry
+      #binding.pry
     end
   end
