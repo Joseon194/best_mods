@@ -1,5 +1,5 @@
 class BestMods::Mod
-  attr_accessor :name ,:datemade, :originalgame, :url
+  attr_accessor :name ,:datemade, :originalgame
   
   def self.thisyear
     self.scrape_mods
@@ -17,8 +17,10 @@ class BestMods::Mod
     
     def self.scrape_moddb
       doc = Nokogiri::HTML(open("https://www.moddb.com/mods/top"))
-      
       mod = self.new
+      mod.name = mod.css("")
+      mod.datemade = 
+      mod.game = 
       binding.pry
     end
   end
