@@ -1,4 +1,4 @@
-require_relative './best_mods.rb'
+require_relative '../best_mods.rb'
 
 class BestMods::CLI
   
